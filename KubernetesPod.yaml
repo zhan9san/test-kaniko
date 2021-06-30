@@ -1,7 +1,5 @@
 ---
 kind: Pod
-metadata:
-  name: kaniko
 spec:
   containers:
     - name: kaniko
