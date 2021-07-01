@@ -8,7 +8,9 @@ pipeline {
     stage('Build') {
       steps {
         container('kaniko') {
-          sh 'pwd; ls -la'
+          sh '''
+          /kaniko/executor -f `pwd`/Dockerfile -c `pwd` --cache=true --destination=index.docker.io/zhan9san/test-kaniko:latest
+          '''
         }
       }
     }
