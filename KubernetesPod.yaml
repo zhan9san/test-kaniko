@@ -23,4 +23,4 @@ spec:
               name: regcred
               items:
                 - key: .dockerconfigjson
-                  path: .docker/config.json
+                  path: config.json
